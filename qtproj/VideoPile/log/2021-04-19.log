@@ -1,0 +1,1024 @@
+Debug: [ 2021-04-19 16:20:06 main.cpp : 318 : getAdapterInfo ] mgr.isOnline() true
+Debug: [ 2021-04-19 16:20:06 main.cpp : 325 : operator() ] Lookup succeed
+Debug: [ 2021-04-19 16:20:16 main.cpp : 130 : appInit ] APP::ipAddr "192.168.2.98"
+Debug: [ 2021-04-19 16:20:16 main.cpp : 142 : appInit ] read config file path : "/root/qtproj/VideoPile/config.ini"
+Debug: [ 2021-04-19 16:20:16 main.cpp : 143 : appInit ] read config :  1 "https://vp.test.car2p.com" "123456789" "JX0001" "12345678"
+Debug: [ 2021-04-19 16:20:16 main.cpp : 97 : main ] start tcpserver :  "192.168.2.98" 8001
+Debug: [ 2021-04-19 16:20:16 main.cpp : 102 : main ] Product has register, start thread
+Debug: [ 2021-04-19 16:20:16 MainThread.cpp : 46 : tmain ] thread tid =  0xb24ff440
+Debug: [ 2021-04-19 16:20:16 UartThread.cpp : 402 : tmain ] thread tid =  0xb1aff440
+Debug: [ 2021-04-19 16:20:16 AndroidThread.cpp : 203 : tmain ] thread tid =  0xafeff440
+Debug: [ 2021-04-19 16:20:16 BackgroundThread.cpp : 535 : tmain ] thread tid =  0xb08ff440
+Debug: [ 2021-04-19 16:20:16 LprThread.cpp : 272 : tmain ] thread tid =  0xb12fe440
+Debug: [ 2021-04-19 16:20:16 UartThread.cpp : 147 : sendUart ] "51 1"
+Debug: [ 2021-04-19 16:20:17 UartThread.cpp : 222 : sendAndWaitReply ] send UART str(repeat three times) :  "51 1"
+Debug: [ 2021-04-19 16:20:17 UartThread.cpp : 223 : sendAndWaitReply ] fail to send, retrying
+Debug: [ 2021-04-19 16:20:17 UartThread.cpp : 222 : sendAndWaitReply ] send UART str(repeat three times) :  "51 1"
+Debug: [ 2021-04-19 16:20:17 UartThread.cpp : 223 : sendAndWaitReply ] fail to send, retrying
+Debug: [ 2021-04-19 16:20:17 UartThread.cpp : 222 : sendAndWaitReply ] send UART str(repeat three times) :  "51 1"
+Debug: [ 2021-04-19 16:20:17 UartThread.cpp : 223 : sendAndWaitReply ] fail to send, retrying
+Debug: [ 2021-04-19 16:20:17 UartThread.cpp : 227 : sendAndWaitReply ] fail to send, no reply received
+Debug: [ 2021-04-19 16:20:27 MainThread.cpp : 215 : poweroffWork ] not use poweroff, in debug mode
+Debug: [ 2021-04-19 16:53:16 main.cpp : 318 : getAdapterInfo ] mgr.isOnline() true
+Debug: [ 2021-04-19 16:53:16 main.cpp : 325 : operator() ] Lookup succeed
+Debug: [ 2021-04-19 16:53:26 main.cpp : 130 : appInit ] APP::ipAddr "192.168.2.98"
+Debug: [ 2021-04-19 16:53:26 main.cpp : 142 : appInit ] read config file path : "/root/qtproj/VideoPile/config.ini"
+Debug: [ 2021-04-19 16:53:26 main.cpp : 143 : appInit ] read config :  1 "https://vp.test.car2p.com" "123456789" "JX0001" "12345678"
+Debug: [ 2021-04-19 16:53:26 main.cpp : 97 : main ] start tcpserver :  "192.168.2.98" 8001
+Debug: [ 2021-04-19 16:53:26 main.cpp : 102 : main ] Product has register, start thread
+Debug: [ 2021-04-19 16:53:26 MainThread.cpp : 46 : tmain ] thread tid =  0xb24ff440
+Debug: [ 2021-04-19 16:53:26 BackgroundThread.cpp : 535 : tmain ] thread tid =  0xb08ff440
+Debug: [ 2021-04-19 16:53:26 UartThread.cpp : 402 : tmain ] thread tid =  0xb1aff440
+Debug: [ 2021-04-19 16:53:26 LprThread.cpp : 272 : tmain ] thread tid =  0xb12fe440
+Debug: [ 2021-04-19 16:53:26 AndroidThread.cpp : 203 : tmain ] thread tid =  0xafeff440
+Debug: [ 2021-04-19 16:53:26 UartThread.cpp : 147 : sendUart ] "51 1"
+Debug: [ 2021-04-19 16:53:26 UartThread.cpp : 217 : sendAndWaitReply ] receive incorrect reply "14 1 2021 4 12 6 53 29"
+Debug: [ 2021-04-19 16:53:26 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "51 1"
+Debug: 
+Debug: [ 2021-04-19 16:53:26 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "55070052b12231362031203832"
+Debug: [ 2021-04-19 16:53:26 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 82"
+Debug: [ 2021-04-19 16:53:26 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  82
+Debug: [ 2021-04-19 16:53:26 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 16:53:26 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 16:53:26 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"82","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618822406774})
+Debug: [ 2021-04-19 16:53:27 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 16:53:30 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051038731312031"
+Debug: [ 2021-04-19 16:53:30 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "11 1"
+Debug: [ 2021-04-19 16:53:30 UartThread.cpp : 130 : sendNoReply ] reply :  "11 1"
+Debug: [ 2021-04-19 16:53:30 LprThread.cpp : 301 : tmain ] start lpr
+Debug: [ 2021-04-19 16:53:32 LprThread.cpp : 220 : readAndCompare ] error : wrong photo Numble, numble =  0
+Debug: [ 2021-04-19 16:53:32 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 16:53:32 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 16:53:32 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 16:53:32 LprThread.cpp : 315 : tmain ] finish lpr
+Debug: [ 2021-04-19 16:53:32 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 16:53:32 BackgroundThread.cpp : 281 : sendBack ] error! have no image
+Debug: [ 2021-04-19 16:53:32 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: [ 2021-04-19 16:53:43 MainThread.cpp : 215 : poweroffWork ] not use poweroff, in debug mode
+Debug: 
+Debug: [ 2021-04-19 17:07:08 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 17:07:08 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 17:07:08 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 17:07:08 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  28 ,  user_buf =  "55160043408531342031203230323120342031322037203720343320"
+Debug: [ 2021-04-19 17:07:08 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 12 7 7 43"
+Debug: [ 2021-04-19 17:07:08 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1 2021 04 19 17 07 08"
+Debug: 
+Debug: [ 2021-04-19 17:07:08 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "5507005222e631362031203537"
+Debug: [ 2021-04-19 17:07:08 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 57"
+Debug: [ 2021-04-19 17:07:08 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  57
+Debug: [ 2021-04-19 17:07:08 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 17:07:08 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 17:07:08 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"57","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618823228671})
+Debug: [ 2021-04-19 17:07:09 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 17:07:23 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 17:07:23 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 17:07:23 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 17:07:23 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  29 ,  user_buf =  "5517004251ca3134203120323032312034203139203137203720313720"
+Debug: [ 2021-04-19 17:07:23 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 17 7 17"
+Debug: [ 2021-04-19 17:07:23 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 17:07:23 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "55070052e0a731362031203530"
+Debug: [ 2021-04-19 17:07:23 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 50"
+Debug: [ 2021-04-19 17:07:23 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  50
+Debug: [ 2021-04-19 17:07:23 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 17:07:23 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 17:07:23 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"50","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618823243713})
+Debug: [ 2021-04-19 17:07:24 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 17:07:28 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 17:07:28 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 17:07:28 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 17:07:28 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 17:07:28 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618823248624})
+Debug: [ 2021-04-19 17:07:28 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 17:07:28 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 17:07:28 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 17:07:37 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 17:07:37 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 17:07:37 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 17:07:37 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  29 ,  user_buf =  "5517004231683134203120323032312034203139203137203720333120"
+Debug: [ 2021-04-19 17:07:37 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 17 7 31"
+Debug: [ 2021-04-19 17:07:37 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 17:07:37 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "55070052d12631362031203632"
+Debug: [ 2021-04-19 17:07:37 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 62"
+Debug: [ 2021-04-19 17:07:37 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  62
+Debug: [ 2021-04-19 17:07:37 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 17:07:37 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 17:07:37 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"62","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618823257486})
+Debug: [ 2021-04-19 17:07:37 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 17:07:41 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051038731312031"
+Debug: [ 2021-04-19 17:07:41 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "11 1"
+Debug: [ 2021-04-19 17:07:41 UartThread.cpp : 130 : sendNoReply ] reply :  "11 1"
+Debug: [ 2021-04-19 17:07:41 LprThread.cpp : 301 : tmain ] start lpr
+Debug: [ 2021-04-19 17:07:42 LprThread.cpp : 220 : readAndCompare ] error : wrong photo Numble, numble =  0
+Debug: [ 2021-04-19 17:07:42 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 17:07:42 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 17:07:42 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 17:07:42 LprThread.cpp : 315 : tmain ] finish lpr
+Debug: [ 2021-04-19 17:07:42 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 17:07:42 BackgroundThread.cpp : 281 : sendBack ] error! have no image
+Debug: [ 2021-04-19 17:07:42 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: [ 2021-04-19 17:12:18 main.cpp : 318 : getAdapterInfo ] mgr.isOnline() true
+Debug: [ 2021-04-19 17:12:18 main.cpp : 325 : operator() ] Lookup succeed
+Debug: [ 2021-04-19 17:12:28 main.cpp : 130 : appInit ] APP::ipAddr "192.168.2.98"
+Debug: [ 2021-04-19 17:12:28 main.cpp : 142 : appInit ] read config file path : "/root/qtproj/VideoPile/config.ini"
+Debug: [ 2021-04-19 17:12:28 main.cpp : 143 : appInit ] read config :  1 "https://vp.test.car2p.com" "123456789" "JX0001" "12345678"
+Debug: [ 2021-04-19 17:12:28 main.cpp : 97 : main ] start tcpserver :  "192.168.2.98" 8001
+Debug: [ 2021-04-19 17:12:28 main.cpp : 102 : main ] Product has register, start thread
+Debug: [ 2021-04-19 17:12:28 MainThread.cpp : 46 : tmain ] thread tid =  0xb23ff440
+Debug: [ 2021-04-19 17:12:28 UartThread.cpp : 402 : tmain ] thread tid =  0xb19ff440
+Debug: [ 2021-04-19 17:12:28 LprThread.cpp : 272 : tmain ] thread tid =  0xb11fe440
+Debug: [ 2021-04-19 17:12:28 BackgroundThread.cpp : 535 : tmain ] thread tid =  0xb05ff440
+Debug: [ 2021-04-19 17:12:28 AndroidThread.cpp : 203 : tmain ] thread tid =  0xafdfe440
+Debug: [ 2021-04-19 17:12:28 UartThread.cpp : 147 : sendUart ] "51 1"
+Debug: [ 2021-04-19 17:12:28 UartThread.cpp : 217 : sendAndWaitReply ] receive incorrect reply "14 1 2021 4 19 17 11 48"
+Debug: [ 2021-04-19 17:12:28 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "51 1"
+Debug: 
+Debug: [ 2021-04-19 17:12:28 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "55070052b12231362031203832"
+Debug: [ 2021-04-19 17:12:28 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 82"
+Debug: [ 2021-04-19 17:12:28 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  82
+Debug: [ 2021-04-19 17:12:28 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 17:12:28 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 17:12:28 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"82","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618823548554})
+Debug: [ 2021-04-19 17:12:29 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 17:12:32 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051038731312031"
+Debug: [ 2021-04-19 17:12:32 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "11 1"
+Debug: [ 2021-04-19 17:12:32 UartThread.cpp : 130 : sendNoReply ] reply :  "11 1"
+Debug: [ 2021-04-19 17:12:32 LprThread.cpp : 301 : tmain ] start lpr
+Debug: [ 2021-04-19 17:12:34 LprThread.cpp : 220 : readAndCompare ] error : wrong photo Numble, numble =  0
+Debug: [ 2021-04-19 17:12:34 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 17:12:34 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 17:12:34 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 17:12:34 LprThread.cpp : 315 : tmain ] finish lpr
+Debug: [ 2021-04-19 17:12:34 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 17:12:34 BackgroundThread.cpp : 281 : sendBack ] error! have no image
+Debug: [ 2021-04-19 17:12:34 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: [ 2021-04-19 17:12:45 MainThread.cpp : 215 : poweroffWork ] not use poweroff, in debug mode
+Debug: 
+Debug: [ 2021-04-19 17:26:09 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 17:26:09 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 17:26:09 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 17:26:09 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  29 ,  user_buf =  "55170042dc503134203120323032312034203139203137203236203320"
+Debug: [ 2021-04-19 17:26:09 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 17 26 3"
+Debug: [ 2021-04-19 17:26:09 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 17:26:09 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "5507005211e731362031203633"
+Debug: [ 2021-04-19 17:26:09 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 63"
+Debug: [ 2021-04-19 17:26:09 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  63
+Debug: [ 2021-04-19 17:26:09 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 17:26:09 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 17:26:09 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"63","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618824369492})
+Debug: [ 2021-04-19 17:26:10 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 17:26:29 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 17:26:29 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 17:26:29 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 17:26:29 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 17:26:29 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618824389433})
+Debug: [ 2021-04-19 17:26:29 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 17:26:29 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 17:26:29 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 17:26:38 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 17:26:38 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 17:26:38 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 17:26:38 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004d44d1313420312032303231203420313920313720323620333220"
+Debug: [ 2021-04-19 17:26:38 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 17 26 32"
+Debug: [ 2021-04-19 17:26:38 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 17:26:38 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "55070052722631362031203436"
+Debug: [ 2021-04-19 17:26:38 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 46"
+Debug: [ 2021-04-19 17:26:38 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  46
+Debug: [ 2021-04-19 17:26:38 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 17:26:38 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 17:26:38 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"46","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618824398272})
+Debug: [ 2021-04-19 17:26:38 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 17:26:41 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051038731312031"
+Debug: [ 2021-04-19 17:26:41 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "11 1"
+Debug: [ 2021-04-19 17:26:41 UartThread.cpp : 130 : sendNoReply ] reply :  "11 1"
+Debug: [ 2021-04-19 17:26:41 LprThread.cpp : 301 : tmain ] start lpr
+Debug: [ 2021-04-19 17:26:43 LprThread.cpp : 220 : readAndCompare ] error : wrong photo Numble, numble =  0
+Debug: [ 2021-04-19 17:26:43 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 17:26:43 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 17:26:43 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 17:26:43 LprThread.cpp : 315 : tmain ] finish lpr
+Debug: [ 2021-04-19 17:26:43 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 17:26:43 BackgroundThread.cpp : 281 : sendBack ] error! have no image
+Debug: [ 2021-04-19 17:26:43 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 17:28:34 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 17:28:34 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 17:28:34 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 17:28:34 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004de5ef313420312032303231203420313920313720323820323820"
+Debug: [ 2021-04-19 17:28:34 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 17 28 28"
+Debug: [ 2021-04-19 17:28:34 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 17:28:34 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "55070052e0a731362031203530"
+Debug: [ 2021-04-19 17:28:34 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 50"
+Debug: [ 2021-04-19 17:28:34 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  50
+Debug: [ 2021-04-19 17:28:34 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 17:28:34 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 17:28:34 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"50","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618824514201})
+Debug: [ 2021-04-19 17:28:34 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 17:28:37 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051038731312031"
+Debug: [ 2021-04-19 17:28:37 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "11 1"
+Debug: [ 2021-04-19 17:28:37 UartThread.cpp : 130 : sendNoReply ] reply :  "11 1"
+Debug: [ 2021-04-19 17:28:37 LprThread.cpp : 301 : tmain ] start lpr
+Debug: [ 2021-04-19 17:28:39 LprThread.cpp : 220 : readAndCompare ] error : wrong photo Numble, numble =  0
+Debug: [ 2021-04-19 17:28:39 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 17:28:39 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 17:28:39 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 17:28:39 LprThread.cpp : 315 : tmain ] finish lpr
+Debug: [ 2021-04-19 17:28:39 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 17:28:39 BackgroundThread.cpp : 281 : sendBack ] error! have no image
+Debug: [ 2021-04-19 17:28:39 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 17:41:45 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 17:41:45 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 17:41:45 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 17:41:45 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004dd263313420312032303231203420313920313720343120333920"
+Debug: [ 2021-04-19 17:41:45 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 17 41 39"
+Debug: [ 2021-04-19 17:41:45 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 17:41:45 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "5507005210a731362031203630"
+Debug: [ 2021-04-19 17:41:45 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 60"
+Debug: [ 2021-04-19 17:41:45 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  60
+Debug: [ 2021-04-19 17:41:45 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 17:41:45 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 17:41:45 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"60","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618825305319})
+Debug: [ 2021-04-19 17:41:45 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 17:42:05 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 17:42:05 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 17:42:05 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 17:42:05 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 17:42:05 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618825325260})
+Debug: [ 2021-04-19 17:42:05 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 17:42:05 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 17:42:05 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 17:42:14 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 17:42:14 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 17:42:14 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 17:42:14 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  29 ,  user_buf =  "55170042dcde3134203120323032312034203139203137203432203820"
+Debug: [ 2021-04-19 17:42:14 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 17 42 8"
+Debug: [ 2021-04-19 17:42:14 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 17:42:14 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "5507005211e731362031203633"
+Debug: [ 2021-04-19 17:42:14 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 63"
+Debug: [ 2021-04-19 17:42:14 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  63
+Debug: [ 2021-04-19 17:42:14 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 17:42:14 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 17:42:14 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"63","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618825334214})
+Debug: [ 2021-04-19 17:42:14 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 17:42:17 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051038731312031"
+Debug: [ 2021-04-19 17:42:17 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "11 1"
+Debug: [ 2021-04-19 17:42:17 UartThread.cpp : 130 : sendNoReply ] reply :  "11 1"
+Debug: [ 2021-04-19 17:42:17 LprThread.cpp : 301 : tmain ] start lpr
+Debug: [ 2021-04-19 17:42:19 LprThread.cpp : 220 : readAndCompare ] error : wrong photo Numble, numble =  0
+Debug: [ 2021-04-19 17:42:19 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 17:42:19 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 17:42:19 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 17:42:19 LprThread.cpp : 315 : tmain ] finish lpr
+Debug: [ 2021-04-19 17:42:19 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 17:42:19 BackgroundThread.cpp : 281 : sendBack ] error! have no image
+Debug: [ 2021-04-19 17:42:19 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 17:55:42 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 17:55:42 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 17:55:42 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 17:55:42 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004d3396313420312032303231203420313920313720353520333620"
+Debug: [ 2021-04-19 17:55:42 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 17 55 36"
+Debug: [ 2021-04-19 17:55:42 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 17:55:42 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "55070052866631362031203739"
+Debug: [ 2021-04-19 17:55:42 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 79"
+Debug: [ 2021-04-19 17:55:42 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  79
+Debug: [ 2021-04-19 17:55:42 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 17:55:42 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 17:55:42 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"79","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618826142519})
+Debug: [ 2021-04-19 17:55:43 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 17:56:02 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 17:56:02 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 17:56:02 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 17:56:02 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 17:56:02 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618826162457})
+Debug: [ 2021-04-19 17:56:02 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 17:56:02 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 17:56:02 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 18:08:53 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 18:08:53 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 18:08:53 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 18:08:53 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  29 ,  user_buf =  "5517004251713134203120323032312034203139203138203820343720"
+Debug: [ 2021-04-19 18:08:53 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 18 8 47"
+Debug: [ 2021-04-19 18:08:53 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 18:08:53 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "55070052822631362031203736"
+Debug: [ 2021-04-19 18:08:53 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 76"
+Debug: [ 2021-04-19 18:08:53 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  76
+Debug: [ 2021-04-19 18:08:53 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 18:08:53 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 18:08:53 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"76","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618826933390})
+Debug: [ 2021-04-19 18:08:53 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 18:09:13 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 18:09:13 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 18:09:13 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 18:09:13 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 18:09:13 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618826953330})
+Debug: [ 2021-04-19 18:09:13 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 18:09:13 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 18:09:13 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 18:22:04 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 18:22:04 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 18:22:04 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 18:22:04 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004d65c2313420312032303231203420313920313820323120353820"
+Debug: [ 2021-04-19 18:22:04 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 18 21 58"
+Debug: [ 2021-04-19 18:22:04 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1 2021 04 19 18 22 04"
+Debug: 
+Debug: [ 2021-04-19 18:22:04 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "5507005281e631362031203733"
+Debug: [ 2021-04-19 18:22:04 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 73"
+Debug: [ 2021-04-19 18:22:04 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  73
+Debug: [ 2021-04-19 18:22:04 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 18:22:04 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 18:22:04 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"73","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618827724324})
+Debug: [ 2021-04-19 18:22:04 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 18:22:24 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 18:22:24 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 18:22:24 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 18:22:24 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 18:22:24 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618827744266})
+Debug: [ 2021-04-19 18:22:24 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 18:22:24 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 18:22:24 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 18:35:32 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 18:35:32 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 18:35:32 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 18:35:32 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004d4586313420312032303231203420313920313820333520323720"
+Debug: [ 2021-04-19 18:35:32 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 18 35 27"
+Debug: [ 2021-04-19 18:35:32 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 18:35:32 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "55070052d06631362031203631"
+Debug: [ 2021-04-19 18:35:32 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 61"
+Debug: [ 2021-04-19 18:35:32 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  61
+Debug: [ 2021-04-19 18:35:32 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 18:35:32 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 18:35:32 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"61","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618828532731})
+Debug: [ 2021-04-19 18:35:33 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 18:35:52 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 18:35:52 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 18:35:52 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 18:35:52 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 18:35:52 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618828552664})
+Debug: [ 2021-04-19 18:35:52 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 18:35:52 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 18:35:53 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 18:48:43 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 18:48:43 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 18:48:43 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 18:48:43 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004d03fe313420312032303231203420313920313820343820333820"
+Debug: [ 2021-04-19 18:48:43 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 18 48 38"
+Debug: [ 2021-04-19 18:48:43 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 18:48:43 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "5507005280a631362031203730"
+Debug: [ 2021-04-19 18:48:43 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 70"
+Debug: [ 2021-04-19 18:48:43 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  70
+Debug: [ 2021-04-19 18:48:43 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 18:48:43 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 18:48:43 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"70","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618829323894})
+Debug: [ 2021-04-19 18:48:44 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 18:49:03 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 18:49:03 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 18:49:03 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 18:49:03 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 18:49:03 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618829343829})
+Debug: [ 2021-04-19 18:49:04 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 18:49:04 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 18:49:04 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 19:01:54 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 19:01:54 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 19:01:54 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 19:01:54 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  29 ,  user_buf =  "55170042f0b93134203120323032312034203139203139203120343920"
+Debug: [ 2021-04-19 19:01:54 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 19 1 49"
+Debug: [ 2021-04-19 19:01:54 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 19:01:55 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "55070052e0a731362031203530"
+Debug: [ 2021-04-19 19:01:55 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 50"
+Debug: [ 2021-04-19 19:01:55 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  50
+Debug: [ 2021-04-19 19:01:55 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 19:01:55 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 19:01:55 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"50","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618830115015})
+Debug: [ 2021-04-19 19:01:55 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 19:02:14 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 19:02:14 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 19:02:14 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 19:02:14 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 19:02:14 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618830134963})
+Debug: [ 2021-04-19 19:02:15 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 19:02:15 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 19:02:15 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 19:15:05 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 19:15:05 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 19:15:05 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 19:15:05 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  29 ,  user_buf =  "55170042a8fb3134203120323032312034203139203139203135203020"
+Debug: [ 2021-04-19 19:15:05 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 19 15 0"
+Debug: [ 2021-04-19 19:15:05 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 19:15:06 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "5507005283a531362031203334"
+Debug: [ 2021-04-19 19:15:06 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 34"
+Debug: [ 2021-04-19 19:15:06 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  34
+Debug: [ 2021-04-19 19:15:06 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 19:15:06 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 19:15:06 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"34","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618830906065})
+Debug: [ 2021-04-19 19:15:06 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 19:15:26 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 19:15:26 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 19:15:26 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 19:15:26 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 19:15:26 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618830926014})
+Debug: [ 2021-04-19 19:15:26 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 19:15:26 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 19:15:26 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 19:28:34 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 19:28:34 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 19:28:34 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 19:28:34 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004df96f313420312032303231203420313920313920323820323920"
+Debug: [ 2021-04-19 19:28:34 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 19 28 29"
+Debug: [ 2021-04-19 19:28:34 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 19:28:34 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "5507005223a631362031203534"
+Debug: [ 2021-04-19 19:28:34 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 54"
+Debug: [ 2021-04-19 19:28:34 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  54
+Debug: [ 2021-04-19 19:28:34 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 19:28:34 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 19:28:34 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"54","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618831714912})
+Debug: [ 2021-04-19 19:28:36 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 19:28:54 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 19:28:54 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 19:28:54 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 19:28:54 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 19:28:54 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618831734862})
+Debug: [ 2021-04-19 19:28:55 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 19:28:55 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 19:28:55 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 19:41:45 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 19:41:45 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 19:41:45 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 19:41:45 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004dcf55313420312032303231203420313920313920343120343020"
+Debug: [ 2021-04-19 19:41:45 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 19 41 40"
+Debug: [ 2021-04-19 19:41:45 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 19:41:45 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "5507005283a531362031203334"
+Debug: [ 2021-04-19 19:41:45 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 34"
+Debug: [ 2021-04-19 19:41:45 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  34
+Debug: [ 2021-04-19 19:41:45 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 19:41:46 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 19:41:46 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"34","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618832505983})
+Debug: [ 2021-04-19 19:41:47 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 19:42:05 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 19:42:05 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 19:42:05 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 19:42:05 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 19:42:05 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618832525921})
+Debug: [ 2021-04-19 19:42:06 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 19:42:06 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 19:42:06 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 19:54:56 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 19:54:56 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 19:54:56 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 19:54:56 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004dbec8313420312032303231203420313920313920353420353220"
+Debug: [ 2021-04-19 19:54:56 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 19 54 52"
+Debug: [ 2021-04-19 19:54:56 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 19:54:57 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "55070052e1e731362031203533"
+Debug: [ 2021-04-19 19:54:57 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 53"
+Debug: [ 2021-04-19 19:54:57 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  53
+Debug: [ 2021-04-19 19:54:57 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 19:54:57 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 19:54:57 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"53","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618833297061})
+Debug: [ 2021-04-19 19:54:58 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 19:55:16 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 19:55:17 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 19:55:17 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 19:55:17 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 19:55:17 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618833317002})
+Debug: [ 2021-04-19 19:55:17 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 19:55:17 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 19:55:17 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 20:08:07 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 20:08:07 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 20:08:07 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 20:08:07 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  28 ,  user_buf =  "55160043479331342031203230323120342031392032302038203320"
+Debug: [ 2021-04-19 20:08:07 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 20 8 3"
+Debug: [ 2021-04-19 20:08:07 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 20:08:08 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "5507005270a631362031203430"
+Debug: [ 2021-04-19 20:08:08 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 40"
+Debug: [ 2021-04-19 20:08:08 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  40
+Debug: [ 2021-04-19 20:08:08 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 20:08:08 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 20:08:08 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"40","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618834088091})
+Debug: [ 2021-04-19 20:08:08 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 20:08:28 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 20:08:28 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 20:08:28 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 20:08:28 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 20:08:28 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618834108029})
+Debug: [ 2021-04-19 20:08:28 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 20:08:28 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 20:08:28 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: [ 2021-04-19 20:13:20 main.cpp : 318 : getAdapterInfo ] mgr.isOnline() true
+Debug: [ 2021-04-19 20:13:20 main.cpp : 325 : operator() ] Lookup succeed
+Debug: [ 2021-04-19 20:13:30 main.cpp : 130 : appInit ] APP::ipAddr "192.168.2.98"
+Debug: [ 2021-04-19 20:13:30 main.cpp : 142 : appInit ] read config file path : "/root/qtproj/VideoPile/config.ini"
+Debug: [ 2021-04-19 20:13:30 main.cpp : 143 : appInit ] read config :  1 "https://vp.test.car2p.com" "123456789" "JX0001" "12345678"
+Debug: [ 2021-04-19 20:13:30 main.cpp : 97 : main ] start tcpserver :  "192.168.2.98" 8001
+Debug: [ 2021-04-19 20:13:30 main.cpp : 102 : main ] Product has register, start thread
+Debug: [ 2021-04-19 20:13:30 MainThread.cpp : 46 : tmain ] thread tid =  0xb24ff440
+Debug: [ 2021-04-19 20:13:30 LprThread.cpp : 272 : tmain ] thread tid =  0xb12fe440
+Debug: [ 2021-04-19 20:13:30 AndroidThread.cpp : 203 : tmain ] thread tid =  0xafeff440
+Debug: [ 2021-04-19 20:13:30 BackgroundThread.cpp : 535 : tmain ] thread tid =  0xb0afd440
+Debug: [ 2021-04-19 20:13:30 UartThread.cpp : 402 : tmain ] thread tid =  0xb1aff440
+Debug: [ 2021-04-19 20:13:30 UartThread.cpp : 147 : sendUart ] "51 1"
+Debug: [ 2021-04-19 20:13:30 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "51 1"
+Debug: [ 2021-04-19 20:13:41 MainThread.cpp : 215 : poweroffWork ] not use poweroff, in debug mode
+Debug: [ 2021-04-19 20:21:07 main.cpp : 318 : getAdapterInfo ] mgr.isOnline() true
+Debug: [ 2021-04-19 20:21:07 main.cpp : 325 : operator() ] Lookup succeed
+Debug: [ 2021-04-19 20:21:17 main.cpp : 130 : appInit ] APP::ipAddr "192.168.2.98"
+Debug: [ 2021-04-19 20:21:17 main.cpp : 142 : appInit ] read config file path : "/root/qtproj/VideoPile/config.ini"
+Debug: [ 2021-04-19 20:21:17 main.cpp : 143 : appInit ] read config :  1 "https://vp.test.car2p.com" "123456789" "JX0001" "12345678"
+Debug: [ 2021-04-19 20:21:17 main.cpp : 97 : main ] start tcpserver :  "192.168.2.98" 8001
+Debug: [ 2021-04-19 20:21:17 main.cpp : 102 : main ] Product has register, start thread
+Debug: [ 2021-04-19 20:21:17 MainThread.cpp : 46 : tmain ] thread tid =  0xb24ff440
+Debug: [ 2021-04-19 20:21:17 AndroidThread.cpp : 203 : tmain ] thread tid =  0xafcff440
+Debug: [ 2021-04-19 20:21:17 UartThread.cpp : 402 : tmain ] thread tid =  0xb1aff440
+Debug: [ 2021-04-19 20:21:17 BackgroundThread.cpp : 535 : tmain ] thread tid =  0xb08ff440
+Debug: [ 2021-04-19 20:21:17 LprThread.cpp : 272 : tmain ] thread tid =  0xb12fe440
+Debug: [ 2021-04-19 20:21:17 UartThread.cpp : 147 : sendUart ] "51 1"
+Debug: [ 2021-04-19 20:21:17 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "51 1"
+Debug: [ 2021-04-19 20:21:28 MainThread.cpp : 215 : poweroffWork ] not use poweroff, in debug mode
+Debug: 
+Debug: [ 2021-04-19 20:21:36 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 20:21:36 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 20:21:36 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 20:21:36 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004d6231313420312032303231203420313920323020323120333120"
+Debug: [ 2021-04-19 20:21:36 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 20 21 31"
+Debug: [ 2021-04-19 20:21:36 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 20:21:36 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "55070052806531362031203331"
+Debug: [ 2021-04-19 20:21:36 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 31"
+Debug: [ 2021-04-19 20:21:36 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  31
+Debug: [ 2021-04-19 20:21:36 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 20:21:36 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 20:21:36 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"31","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618834896402})
+Debug: [ 2021-04-19 20:21:37 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 20:21:56 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 20:21:56 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 20:21:56 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 20:21:56 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 20:21:56 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618834916349})
+Debug: [ 2021-04-19 20:21:57 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 20:21:57 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 20:21:57 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 20:34:47 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 20:34:47 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 20:34:47 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 20:34:47 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004d824d313420312032303231203420313920323020333420343220"
+Debug: [ 2021-04-19 20:34:47 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 20 34 42"
+Debug: [ 2021-04-19 20:34:47 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 20:34:47 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "55070052122731362031203636"
+Debug: [ 2021-04-19 20:34:47 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 66"
+Debug: [ 2021-04-19 20:34:47 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  66
+Debug: [ 2021-04-19 20:34:47 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 20:34:47 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 20:34:47 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"66","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618835687200})
+Debug: [ 2021-04-19 20:34:53 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 20:35:07 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 20:35:07 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 20:35:07 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 20:35:07 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 20:35:07 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618835707140})
+Debug: [ 2021-04-19 20:35:07 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 20:35:07 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 20:35:07 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 20:47:58 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 20:47:58 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 20:47:58 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 20:47:58 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004d6558313420312032303231203420313920323020343720353320"
+Debug: [ 2021-04-19 20:47:58 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 20 47 53"
+Debug: [ 2021-04-19 20:47:58 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 20:47:58 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "55070052812531362031203332"
+Debug: [ 2021-04-19 20:47:58 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 32"
+Debug: [ 2021-04-19 20:47:58 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  32
+Debug: [ 2021-04-19 20:47:58 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 20:47:58 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 20:47:58 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"32","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618836478220})
+Debug: [ 2021-04-19 20:47:58 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 20:48:18 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 20:48:18 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 20:48:18 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 20:48:18 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 20:48:18 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618836498162})
+Debug: [ 2021-04-19 20:48:18 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 20:48:18 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 20:48:18 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 20:50:48 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 20:50:48 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 20:50:48 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 20:50:48 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004db4bd313420312032303231203420313920323020353020343320"
+Debug: [ 2021-04-19 20:50:48 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 20 50 43"
+Debug: [ 2021-04-19 20:50:48 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 20:50:48 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "55070052122731362031203636"
+Debug: [ 2021-04-19 20:50:48 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 66"
+Debug: [ 2021-04-19 20:50:48 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  66
+Debug: [ 2021-04-19 20:50:48 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 20:50:48 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 20:50:48 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"66","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618836648390})
+Debug: [ 2021-04-19 20:50:48 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 20:50:51 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051038731312031"
+Debug: [ 2021-04-19 20:50:51 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "11 1"
+Debug: [ 2021-04-19 20:50:51 UartThread.cpp : 130 : sendNoReply ] reply :  "11 1"
+Debug: [ 2021-04-19 20:50:51 UartThread.cpp : 147 : sendUart ] "53 1"
+Debug: [ 2021-04-19 20:50:52 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "53 1"
+Debug: [ 2021-04-19 20:50:52 LprThread.cpp : 301 : tmain ] start lpr
+Debug: [ 2021-04-19 20:50:55 LprThread.cpp : 220 : readAndCompare ] error : wrong photo Numble, numble =  0
+Debug: [ 2021-04-19 20:50:55 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 20:50:55 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 20:50:55 LprThread.cpp : 229 : readAndCompare ] plate :  "" confidence :  0
+Debug: [ 2021-04-19 20:50:55 LprThread.cpp : 315 : tmain ] finish lpr
+Debug: [ 2021-04-19 20:50:55 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 20:50:55 UartThread.cpp : 147 : sendUart ] "53 2"
+Debug: [ 2021-04-19 20:50:55 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: [ 2021-04-19 20:50:55 BackgroundThread.cpp : 281 : sendBack ] error! have no image
+Debug: [ 2021-04-19 20:50:55 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "53 2"
+Debug: 
+Debug: [ 2021-04-19 20:51:25 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 20:51:25 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 20:51:25 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 20:51:25 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004d1561313420312032303231203420313920323020353120323120"
+Debug: [ 2021-04-19 20:51:25 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 20 51 21"
+Debug: [ 2021-04-19 20:51:25 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 20:51:25 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  23 ,  user_buf =  "55070052d2e63136203120363755040051c32631332031"
+Debug: [ 2021-04-19 20:51:25 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 67"
+Debug: [ 2021-04-19 20:51:25 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  67
+Debug: [ 2021-04-19 20:51:25 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 20:51:25 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "13 1"
+Debug: [ 2021-04-19 20:51:25 UartThread.cpp : 130 : sendNoReply ] reply :  "13 1"
+Debug: [ 2021-04-19 20:51:25 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 20:51:25 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"67","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618836685990})
+Debug: [ 2021-04-19 20:51:26 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: [ 2021-04-19 20:51:26 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 20:51:26 BackgroundThread.cpp : 354 : sendAndAnalysis ] send json except image : QJsonObject({"cmd":"park","confidence":"0","devId":"123456789","direction":2,"ifRecognition":0,"license":"","parkId":"JX0001","time":1618836685998,"type":0})
+Debug: [ 2021-04-19 20:51:26 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"park","confidence":null,"license":null,"response":1,"status":null})
+Debug: [ 2021-04-19 20:59:04 main.cpp : 318 : getAdapterInfo ] mgr.isOnline() true
+Debug: [ 2021-04-19 20:59:04 main.cpp : 325 : operator() ] Lookup succeed
+Debug: [ 2021-04-19 20:59:14 main.cpp : 130 : appInit ] APP::ipAddr "192.168.2.98"
+Debug: [ 2021-04-19 20:59:14 main.cpp : 142 : appInit ] read config file path : "/root/qtproj/VideoPile/config.ini"
+Debug: [ 2021-04-19 20:59:14 main.cpp : 143 : appInit ] read config :  1 "https://vp.test.car2p.com" "123456789" "JX0001" "12345678"
+Debug: [ 2021-04-19 20:59:14 main.cpp : 97 : main ] start tcpserver :  "192.168.2.98" 8001
+Debug: [ 2021-04-19 20:59:14 main.cpp : 102 : main ] Product has register, start thread
+Debug: [ 2021-04-19 20:59:14 MainThread.cpp : 46 : tmain ] thread tid =  0xb24ff440
+Debug: [ 2021-04-19 20:59:14 BackgroundThread.cpp : 535 : tmain ] thread tid =  0xb06ff440
+Debug: [ 2021-04-19 20:59:14 LprThread.cpp : 272 : tmain ] thread tid =  0xb12fe440
+Debug: [ 2021-04-19 20:59:14 AndroidThread.cpp : 203 : tmain ] thread tid =  0xafefe440
+Debug: [ 2021-04-19 20:59:14 UartThread.cpp : 402 : tmain ] thread tid =  0xb1aff440
+Debug: [ 2021-04-19 20:59:14 UartThread.cpp : 147 : sendUart ] "51 1"
+Debug: [ 2021-04-19 20:59:15 UartThread.cpp : 217 : sendAndWaitReply ] receive incorrect reply "14 1 2021 4 19 20 58 37"
+Debug: [ 2021-04-19 20:59:15 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "51 1"
+Debug: 
+Debug: [ 2021-04-19 20:59:15 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "55070052e66731362031203539"
+Debug: [ 2021-04-19 20:59:15 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 59"
+Debug: [ 2021-04-19 20:59:15 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  59
+Debug: [ 2021-04-19 20:59:15 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 20:59:15 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 20:59:15 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"59","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618837155111})
+Debug: [ 2021-04-19 20:59:16 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 20:59:18 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051038731312031"
+Debug: [ 2021-04-19 20:59:18 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "11 1"
+Debug: [ 2021-04-19 20:59:18 UartThread.cpp : 130 : sendNoReply ] reply :  "11 1"
+Debug: [ 2021-04-19 20:59:18 UartThread.cpp : 147 : sendUart ] "53 1"
+Debug: [ 2021-04-19 20:59:18 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "53 1"
+Debug: [ 2021-04-19 20:59:19 LprThread.cpp : 301 : tmain ] start lpr
+Debug: [ 2021-04-19 20:59:37 LprThread.cpp : 229 : readAndCompare ] plate :  "none" confidence :  0
+Debug: [ 2021-04-19 20:59:37 LprThread.cpp : 229 : readAndCompare ] plate :  "none" confidence :  0
+Debug: [ 2021-04-19 20:59:37 LprThread.cpp : 229 : readAndCompare ] plate :  "none" confidence :  0
+Debug: [ 2021-04-19 20:59:37 LprThread.cpp : 315 : tmain ] finish lpr
+Debug: [ 2021-04-19 20:59:37 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 20:59:37 UartThread.cpp : 147 : sendUart ] "53 2"
+Debug: [ 2021-04-19 20:59:37 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: [ 2021-04-19 20:59:37 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "53 2"
+Debug: [ 2021-04-19 20:59:37 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 20:59:37 BackgroundThread.cpp : 354 : sendAndAnalysis ] send json except image : QJsonObject({"cmd":"park","confidence":"0","devId":"123456789","direction":1,"ifRecognition":3,"license":"none","parkId":"JX0001","time":1618837177278,"type":1})
+Debug: [ 2021-04-19 20:59:39 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"park","confidence":null,"license":"","response":1,"status":3})
+Debug: [ 2021-04-19 20:59:39 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 20:59:39 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: [ 2021-04-19 20:59:49 MainThread.cpp : 215 : poweroffWork ] not use poweroff, in debug mode
+Debug: 
+Debug: [ 2021-04-19 21:13:00 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 21:13:00 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 21:13:00 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 21:13:00 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004d5c56313420312032303231203420313920323120313220353520"
+Debug: [ 2021-04-19 21:13:00 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 21 12 55"
+Debug: [ 2021-04-19 21:13:00 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1 2021 04 19 21 13 00"
+Debug: 
+Debug: [ 2021-04-19 21:13:00 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "5507005226a631362031203538"
+Debug: [ 2021-04-19 21:13:00 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 58"
+Debug: [ 2021-04-19 21:13:00 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  58
+Debug: [ 2021-04-19 21:13:00 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 21:13:00 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 21:13:00 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"58","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618837980495})
+Debug: [ 2021-04-19 21:13:01 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 21:13:20 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 21:13:20 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 21:13:20 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 21:13:20 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 21:13:20 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618838000449})
+Debug: [ 2021-04-19 21:13:20 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 21:13:20 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 21:13:20 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 21:13:28 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 21:13:28 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 21:13:28 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 21:13:28 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004dfdd9313420312032303231203420313920323120313320323320"
+Debug: [ 2021-04-19 21:13:28 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 21 13 23"
+Debug: [ 2021-04-19 21:13:28 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 21:13:29 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "5507005226a631362031203538"
+Debug: [ 2021-04-19 21:13:29 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 58"
+Debug: [ 2021-04-19 21:13:29 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  58
+Debug: [ 2021-04-19 21:13:29 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 21:13:29 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 21:13:29 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"58","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618838009095})
+Debug: [ 2021-04-19 21:13:29 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 21:13:32 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051038731312031"
+Debug: [ 2021-04-19 21:13:32 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "11 1"
+Debug: [ 2021-04-19 21:13:32 UartThread.cpp : 130 : sendNoReply ] reply :  "11 1"
+Debug: [ 2021-04-19 21:13:32 UartThread.cpp : 147 : sendUart ] "53 1"
+Debug: [ 2021-04-19 21:13:32 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "53 1"
+Debug: [ 2021-04-19 21:13:33 LprThread.cpp : 301 : tmain ] start lpr
+Debug: [ 2021-04-19 21:13:50 LprThread.cpp : 229 : readAndCompare ] plate :  "none" confidence :  0
+Debug: [ 2021-04-19 21:13:50 LprThread.cpp : 229 : readAndCompare ] plate :  "none" confidence :  0
+Debug: [ 2021-04-19 21:13:50 LprThread.cpp : 229 : readAndCompare ] plate :  "none" confidence :  0
+Debug: [ 2021-04-19 21:13:50 LprThread.cpp : 315 : tmain ] finish lpr
+Debug: [ 2021-04-19 21:13:50 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 21:13:50 UartThread.cpp : 147 : sendUart ] "53 2"
+Debug: [ 2021-04-19 21:13:50 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: [ 2021-04-19 21:13:50 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "53 2"
+Debug: [ 2021-04-19 21:13:50 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 21:13:50 BackgroundThread.cpp : 354 : sendAndAnalysis ] send json except image : QJsonObject({"cmd":"park","confidence":"0","devId":"123456789","direction":1,"ifRecognition":3,"license":"none","parkId":"JX0001","time":1618838030508,"type":1})
+Debug: [ 2021-04-19 21:13:54 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"park","confidence":null,"license":"","response":1,"status":3})
+Debug: [ 2021-04-19 21:13:54 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 21:13:54 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 21:27:13 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 21:27:13 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 21:27:13 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 21:27:13 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  29 ,  user_buf =  "5517004205703134203120323032312034203139203231203237203820"
+Debug: [ 2021-04-19 21:27:13 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 21 27 8"
+Debug: [ 2021-04-19 21:27:13 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 21:27:13 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "5507005210a731362031203630"
+Debug: [ 2021-04-19 21:27:13 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 60"
+Debug: [ 2021-04-19 21:27:13 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  60
+Debug: [ 2021-04-19 21:27:13 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 21:27:13 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 21:27:13 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"60","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618838833604})
+Debug: [ 2021-04-19 21:27:14 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 21:27:33 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 21:27:33 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 21:27:33 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 21:27:33 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 21:27:33 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618838853542})
+Debug: [ 2021-04-19 21:27:33 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 21:27:33 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 21:27:33 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 21:30:03 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 21:30:03 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 21:30:03 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 21:30:03 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004d3ef7313420312032303231203420313920323120323920353820"
+Debug: [ 2021-04-19 21:30:03 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 21 29 58"
+Debug: [ 2021-04-19 21:30:03 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1 2021 04 19 21 30 03"
+Debug: 
+Debug: [ 2021-04-19 21:30:03 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "5507005222e631362031203537"
+Debug: [ 2021-04-19 21:30:03 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 57"
+Debug: [ 2021-04-19 21:30:03 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  57
+Debug: [ 2021-04-19 21:30:03 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 21:30:03 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 21:30:03 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"57","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618839003831})
+Debug: [ 2021-04-19 21:30:04 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 21:30:07 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051038731312031"
+Debug: [ 2021-04-19 21:30:07 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "11 1"
+Debug: [ 2021-04-19 21:30:07 UartThread.cpp : 130 : sendNoReply ] reply :  "11 1"
+Debug: [ 2021-04-19 21:30:07 UartThread.cpp : 147 : sendUart ] "53 1"
+Debug: [ 2021-04-19 21:30:07 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "53 1"
+Debug: [ 2021-04-19 21:30:08 LprThread.cpp : 301 : tmain ] start lpr
+Debug: [ 2021-04-19 21:30:24 LprThread.cpp : 229 : readAndCompare ] plate :  "none" confidence :  0
+Debug: [ 2021-04-19 21:30:24 LprThread.cpp : 229 : readAndCompare ] plate :  "none" confidence :  0
+Debug: [ 2021-04-19 21:30:24 LprThread.cpp : 229 : readAndCompare ] plate :  "none" confidence :  0
+Debug: [ 2021-04-19 21:30:24 LprThread.cpp : 315 : tmain ] finish lpr
+Debug: [ 2021-04-19 21:30:24 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 21:30:24 UartThread.cpp : 147 : sendUart ] "53 2"
+Debug: [ 2021-04-19 21:30:25 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: [ 2021-04-19 21:30:25 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "53 2"
+Debug: [ 2021-04-19 21:30:25 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 21:30:25 BackgroundThread.cpp : 354 : sendAndAnalysis ] send json except image : QJsonObject({"cmd":"park","confidence":"0","devId":"123456789","direction":1,"ifRecognition":3,"license":"none","parkId":"JX0001","time":1618839025004,"type":1})
+Debug: [ 2021-04-19 21:30:27 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"park","confidence":null,"license":"","response":1,"status":3})
+Debug: [ 2021-04-19 21:30:27 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 21:30:27 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 21:38:59 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 21:38:59 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 21:38:59 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 21:38:59 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004d2fce313420312032303231203420313920323120333820353420"
+Debug: [ 2021-04-19 21:38:59 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 21 38 54"
+Debug: [ 2021-04-19 21:38:59 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 21:39:00 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "5507005222e631362031203537"
+Debug: [ 2021-04-19 21:39:00 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 57"
+Debug: [ 2021-04-19 21:39:00 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  57
+Debug: [ 2021-04-19 21:39:00 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 21:39:00 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 21:39:00 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"57","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618839540028})
+Debug: [ 2021-04-19 21:39:00 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 21:39:03 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051038731312031"
+Debug: [ 2021-04-19 21:39:03 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "11 1"
+Debug: [ 2021-04-19 21:39:03 UartThread.cpp : 130 : sendNoReply ] reply :  "11 1"
+Debug: [ 2021-04-19 21:39:03 UartThread.cpp : 147 : sendUart ] "53 1"
+Debug: [ 2021-04-19 21:39:03 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "53 1"
+Debug: [ 2021-04-19 21:39:04 LprThread.cpp : 301 : tmain ] start lpr
+Debug: [ 2021-04-19 21:39:20 LprThread.cpp : 229 : readAndCompare ] plate :  "none" confidence :  0
+Debug: [ 2021-04-19 21:39:20 LprThread.cpp : 229 : readAndCompare ] plate :  "none" confidence :  0
+Debug: [ 2021-04-19 21:39:20 LprThread.cpp : 229 : readAndCompare ] plate :  "none" confidence :  0
+Debug: [ 2021-04-19 21:39:20 LprThread.cpp : 315 : tmain ] finish lpr
+Debug: [ 2021-04-19 21:39:20 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 21:39:20 UartThread.cpp : 147 : sendUart ] "53 2"
+Debug: [ 2021-04-19 21:39:20 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: [ 2021-04-19 21:39:20 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "53 2"
+Debug: [ 2021-04-19 21:39:21 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 21:39:21 BackgroundThread.cpp : 354 : sendAndAnalysis ] send json except image : QJsonObject({"cmd":"park","confidence":"0","devId":"123456789","direction":1,"ifRecognition":3,"license":"none","parkId":"JX0001","time":1618839560841,"type":1})
+Debug: [ 2021-04-19 21:39:22 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"park","confidence":null,"license":"","response":1,"status":3})
+Debug: [ 2021-04-19 21:39:22 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 21:39:22 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 21:52:29 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 21:52:29 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 21:52:29 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 21:52:29 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004db9e5313420312032303231203420313920323120353220323320"
+Debug: [ 2021-04-19 21:52:29 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 21 52 23"
+Debug: [ 2021-04-19 21:52:29 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 21:52:29 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "5507005210a731362031203630"
+Debug: [ 2021-04-19 21:52:29 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 60"
+Debug: [ 2021-04-19 21:52:29 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  60
+Debug: [ 2021-04-19 21:52:29 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 21:52:29 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 21:52:29 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"60","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618840349462})
+Debug: [ 2021-04-19 21:52:29 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 21:52:49 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 21:52:49 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 21:52:49 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 21:52:49 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 21:52:49 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618840369406})
+Debug: [ 2021-04-19 21:52:49 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 21:52:49 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 21:52:49 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 21:52:57 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 21:52:57 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 21:52:57 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 21:52:57 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  30 ,  user_buf =  "5518004de855313420312032303231203420313920323120353220353220"
+Debug: [ 2021-04-19 21:52:57 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 21 52 52"
+Debug: [ 2021-04-19 21:52:57 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 21:52:58 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "5507005222e631362031203537"
+Debug: [ 2021-04-19 21:52:58 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 57"
+Debug: [ 2021-04-19 21:52:58 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  57
+Debug: [ 2021-04-19 21:52:58 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 21:52:58 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 21:52:58 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"57","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618840378048})
+Debug: [ 2021-04-19 21:52:58 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 21:53:01 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051038731312031"
+Debug: [ 2021-04-19 21:53:01 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "11 1"
+Debug: [ 2021-04-19 21:53:01 UartThread.cpp : 130 : sendNoReply ] reply :  "11 1"
+Debug: [ 2021-04-19 21:53:01 UartThread.cpp : 147 : sendUart ] "53 1"
+Debug: [ 2021-04-19 21:53:01 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "53 1"
+Debug: [ 2021-04-19 21:53:02 LprThread.cpp : 301 : tmain ] start lpr
+Debug: [ 2021-04-19 21:53:18 LprThread.cpp : 229 : readAndCompare ] plate :  "none" confidence :  0
+Debug: [ 2021-04-19 21:53:18 LprThread.cpp : 229 : readAndCompare ] plate :  "none" confidence :  0
+Debug: [ 2021-04-19 21:53:18 LprThread.cpp : 229 : readAndCompare ] plate :  "none" confidence :  0
+Debug: [ 2021-04-19 21:53:18 LprThread.cpp : 315 : tmain ] finish lpr
+Debug: [ 2021-04-19 21:53:18 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 21:53:18 UartThread.cpp : 147 : sendUart ] "53 2"
+Debug: [ 2021-04-19 21:53:18 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: [ 2021-04-19 21:53:18 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "53 2"
+Debug: [ 2021-04-19 21:53:19 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 21:53:19 BackgroundThread.cpp : 354 : sendAndAnalysis ] send json except image : QJsonObject({"cmd":"park","confidence":"0","devId":"123456789","direction":1,"ifRecognition":3,"license":"none","parkId":"JX0001","time":1618840398631,"type":1})
+Debug: [ 2021-04-19 21:53:23 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"park","confidence":null,"license":"","response":1,"status":3})
+Debug: [ 2021-04-19 21:53:23 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 21:53:23 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"
+Debug: 
+Debug: [ 2021-04-19 22:06:29 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  10 ,  user_buf =  "55040051c2c631352031"
+Debug: [ 2021-04-19 22:06:29 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "15 1"
+Debug: [ 2021-04-19 22:06:29 UartThread.cpp : 130 : sendNoReply ] reply :  "15 1"
+Debug: 
+Debug: [ 2021-04-19 22:06:29 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  29 ,  user_buf =  "5517004244103134203120323032312034203139203232203620323320"
+Debug: [ 2021-04-19 22:06:29 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "14 1 2021 4 19 22 6 23"
+Debug: [ 2021-04-19 22:06:29 UartThread.cpp : 130 : sendNoReply ] reply :  "14 1"
+Debug: 
+Debug: [ 2021-04-19 22:06:29 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  13 ,  user_buf =  "5507005223a631362031203534"
+Debug: [ 2021-04-19 22:06:29 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "16 1 54"
+Debug: [ 2021-04-19 22:06:29 UartThread.cpp : 376 : uartDataAnalysis ] R_L_BATTERY battery =  54
+Debug: [ 2021-04-19 22:06:29 UartThread.cpp : 130 : sendNoReply ] reply :  "16 1"
+Debug: [ 2021-04-19 22:06:29 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 22:06:29 BackgroundThread.cpp : 349 : sendAndAnalysis ] send json : QJsonObject({"battery":"54","cmd":"heartbeat","devId":"123456789","hardVer":"0.0.2","parkId":"JX0001","time":1618841189233})
+Debug: [ 2021-04-19 22:06:30 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"heartbeat","response":1,"upgradeUrl":"","upgradeUrlMcu":""})
+Debug: 
+Debug: [ 2021-04-19 22:06:49 UartThread.cpp : 251 : uartDataAnalysis ] user_size =  11 ,  user_buf =  "55050050fe423132203120"
+Debug: [ 2021-04-19 22:06:49 UartThread.cpp : 267 : uartDataAnalysis ] list_unpack =  "12 1"
+Debug: [ 2021-04-19 22:06:49 UartThread.cpp : 130 : sendNoReply ] reply :  "12 1"
+Debug: [ 2021-04-19 22:06:49 BackgroundThread.cpp : 346 : sendAndAnalysis ] 
+Debug: [ 2021-04-19 22:06:49 BackgroundThread.cpp : 358 : sendAndAnalysis ] send json : QJsonObject({"cmd":"distinguish","devId":"123456789","parkId":"JX0001","time":1618841209176})
+Debug: [ 2021-04-19 22:06:49 BackgroundThread.cpp : 375 : sendAndAnalysis ] receive json : QJsonObject({"cmd":"distinguish","license":null,"response":1,"status":3})
+Debug: [ 2021-04-19 22:06:49 UartThread.cpp : 147 : sendUart ] "52 1 3 none 0"
+Debug: [ 2021-04-19 22:06:49 UartThread.cpp : 204 : sendAndWaitReply ] receive correct reply "52 1"

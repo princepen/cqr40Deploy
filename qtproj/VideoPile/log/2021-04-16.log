@@ -1,0 +1,21 @@
+Debug: [ 2021-04-16 16:58:59 main.cpp : 318 : getAdapterInfo ] mgr.isOnline() true
+Debug: [ 2021-04-16 16:58:59 main.cpp : 325 : operator() ] Lookup succeed
+Debug: [ 2021-04-16 16:59:09 main.cpp : 130 : appInit ] APP::ipAddr "192.168.2.98"
+Debug: [ 2021-04-16 16:59:09 main.cpp : 142 : appInit ] read config file path : "/root/qtproj/VideoPile/config.ini"
+Debug: [ 2021-04-16 16:59:09 main.cpp : 143 : appInit ] read config :  1 "https://vp.test.car2p.com" "123456789" "JX0001" "12345678"
+Debug: [ 2021-04-16 16:59:09 main.cpp : 97 : main ] start tcpserver :  "192.168.2.98" 8001
+Debug: [ 2021-04-16 16:59:09 main.cpp : 102 : main ] Product has register, start thread
+Debug: [ 2021-04-16 16:59:09 MainThread.cpp : 46 : tmain ] thread tid =  0xb24ff440
+Debug: [ 2021-04-16 16:59:09 LprThread.cpp : 272 : tmain ] thread tid =  0xb12fe440
+Debug: [ 2021-04-16 16:59:09 BackgroundThread.cpp : 535 : tmain ] thread tid =  0xb06ff440
+Debug: [ 2021-04-16 16:59:09 UartThread.cpp : 402 : tmain ] thread tid =  0xb1aff440
+Debug: [ 2021-04-16 16:59:09 AndroidThread.cpp : 203 : tmain ] thread tid =  0xafefe440
+Debug: [ 2021-04-16 16:59:09 UartThread.cpp : 147 : sendUart ] "51 1"
+Debug: [ 2021-04-16 16:59:09 UartThread.cpp : 222 : sendAndWaitReply ] send UART str(repeat three times) :  "51 1"
+Debug: [ 2021-04-16 16:59:09 UartThread.cpp : 223 : sendAndWaitReply ] fail to send, retrying
+Debug: [ 2021-04-16 16:59:09 UartThread.cpp : 222 : sendAndWaitReply ] send UART str(repeat three times) :  "51 1"
+Debug: [ 2021-04-16 16:59:09 UartThread.cpp : 223 : sendAndWaitReply ] fail to send, retrying
+Debug: [ 2021-04-16 16:59:09 UartThread.cpp : 222 : sendAndWaitReply ] send UART str(repeat three times) :  "51 1"
+Debug: [ 2021-04-16 16:59:09 UartThread.cpp : 223 : sendAndWaitReply ] fail to send, retrying
+Debug: [ 2021-04-16 16:59:09 UartThread.cpp : 227 : sendAndWaitReply ] fail to send, no reply received
+Debug: [ 2021-04-16 16:59:20 MainThread.cpp : 215 : poweroffWork ] not use poweroff, in debug mode
